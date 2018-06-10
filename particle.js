@@ -1411,7 +1411,7 @@ var pJS = function(tag_id, params){
   
   //for blinking
   var toggle=true;
-   setInterval(blink,100);
+   setInterval(blink,1000);
   function blink(){
       if(toggle){
           pJS.fn.modes.removeParticles(pJS.interactivity.modes.remove.particles_nb);
