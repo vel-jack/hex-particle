@@ -41,10 +41,13 @@
       function callJS() {
            
         var mclick = document.getElementById("mclick").value;
-        var  mhover= document.getElementById("mhover").value;
-        
+        var mhover = document.getElementById("mhover").value;
+        var pcolor  = document.getElementById("pcolor").value;
         particlesJS("part", {
           "particles": {
+            "color": {
+              "value" : pcolor
+            },
             "move" : {
                 "speed" : 0
             },
@@ -117,7 +120,7 @@
         Color
       </td>
       <td>
-        <select id="color" onchange="callJS();">
+        <select id="pcolor" onchange="callJS();">
           <option value="#fff">White</option>
           <option value="#0f0">Green</option>
           <option value="#f00">Red</option>
