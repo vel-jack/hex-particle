@@ -503,7 +503,7 @@ var pJS = function(tag_id, params){
     measurementCalculation(hexSide);
     pointsGenerator();
     var xp=0;
-    // console.log("TotalPoints "+totalPoints);
+    console.log(hexSide+" "+pJS.particles.line_linked.distance);
     
     pJS.particles.number.value = totalPoints;
     // pJS.particles.number.value = 40;
