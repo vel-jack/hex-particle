@@ -473,6 +473,8 @@ var pJS = function(tag_id, params){
     
   };
   
+  //generate points of the hexagon
+  
   var hexPoint=[],totalPoints=0,hexRad,t,hexSide;
   function pointsGenerator(){
       yf = true;
@@ -488,20 +490,20 @@ var pJS = function(tag_id, params){
           }
       }
   }
+  //to find radius, t, of the hexagon
   function measurementCalculation(hexSide){
       hexRad = (Math.sqrt(3)/2)*hexSide;
       t = hexSide / 2;
     //   console.log(hexSide+" "+hexRad+" "+t);
   }
+  
+  
   pJS.fn.particlesCreate = function(){
     hexSide = 50;
     measurementCalculation(hexSide);
     pointsGenerator();
     var xp=0;
     // console.log("TotalPoints "+totalPoints);
-    // for(i=0;i<totalPoints;i++){
-    //     console.log(hexPoint[i]);
-    // }
     
     pJS.particles.number.value = totalPoints;
     // pJS.particles.number.value = 40;
