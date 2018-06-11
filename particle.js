@@ -803,7 +803,7 @@ var pJS = function(tag_id, params){
     if(!pJS.particles.move.enable){
       pJS.fn.particlesDraw();
     }
-    console.log(tmp);
+//     console.log(tmp);
     if(tmp[0] != undefined){
     removedParticles.push(tmp[0]);
     // console.log(removedParticles);
