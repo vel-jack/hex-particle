@@ -43,14 +43,10 @@
         var mclick = document.getElementById("mclick").value;
         var mhover = document.getElementById("mhover").value;
         var pcolor = document.getElementById("pcolor").value;
-        var side   = document.getElementById("hexSide").value;
-        var line_linked_distance = parseInt(side)+20;
-        console.log(side);
-        console.log(line_linked_distance);
         particlesJS("part", {
           "particles": {
             "number":{
-              "value": side
+              "value": 50
             },
             "color": {
               "value" : pcolor
@@ -63,7 +59,7 @@
             },
             "line_linked" : {
               "width": 7,
-              "distance" : line_linked_distance
+              "distance" : 70
             },
             "opacity" : {
                 "value" : 1,
@@ -106,20 +102,6 @@
   <!--<body>-->
     <div id="table-container">
   <table>
-    <tr>
-      <td>
-        Hexagon Side
-      </td>
-      <td>
-        <select id="hexSide" onchange="callJS();">
-          <option value="50">50</option>
-          <option value="60">60</option>
-          <option value="70">70</option>
-          <option value="80">80</option>
-          <option value="90">90</option>
-        </select>
-      </td>
-    </tr>
     
     <tr>
       <td>
