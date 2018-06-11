@@ -499,7 +499,7 @@ var pJS = function(tag_id, params){
   
   
   pJS.fn.particlesCreate = function(){
-    hexSide = 50;
+    hexSide = pJS.particles.number.value;
     measurementCalculation(hexSide);
     pointsGenerator();
     var xp=0;
