@@ -28,6 +28,13 @@
       td {
           color : #fff;
       }
+      button {
+          background-color : rgba(100, 0 , 150, 0.2);
+          border-radius: 5px;
+      }
+      button : hover {
+          background-color : rgba(100, 0 , 150, 0.7);
+      }
     </style>
     
     <script type="text/javascript">
@@ -46,7 +53,7 @@
             },
             "line_linked" : {
               "width": 7,
-              distance: 70
+              "distance": 70
             },
             "opacity" : {
                 "value" : 1,
@@ -89,6 +96,39 @@
   <!--<body>-->
     <div id="table-container">
   <table>
+    <tr>
+      <td>
+        Hexagon Side
+      </td>
+      <td>
+        <select id="hexSide" onchange="callJS();">
+          <option value="40">40</option>
+          <option value="50">50</option>
+          <option value="60">60</option>
+          <option value="70">70</option>
+          <option value="80">80</option>
+          <option value="90">90</option>
+        </select>
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        Color
+      </td>
+      <td>
+        <select id="color" onchange="callJS();">
+          <option value="#fff">White</option>
+          <option value="#0f0">Green</option>
+          <option value="#f00">Red</option>
+          <option value="#00f">Blue</option>
+          <option value="#ff0">Yellow</option>
+          <option value="#888">Grey</option>
+          <option value="#800">Maroon</option>
+        </select>
+      </td>
+    </tr>
+    
     <tr>
       <td>
         Onclick
