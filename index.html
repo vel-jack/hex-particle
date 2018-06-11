@@ -42,7 +42,9 @@
            
         var mclick = document.getElementById("mclick").value;
         var mhover = document.getElementById("mhover").value;
-        var pcolor  = document.getElementById("pcolor").value;
+        var pcolor = document.getElementById("pcolor").value;
+        var side   = document.getElementById("hexSide").value;
+        var line_linked_distance = side+20;
         particlesJS("part", {
           "particles": {
             "number":{
@@ -59,7 +61,7 @@
             },
             "line_linked" : {
               "width": 7,
-              "distance": 70
+              "distance": line_linked_distance;
             },
             "opacity" : {
                 "value" : 1,
