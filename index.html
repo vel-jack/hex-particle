@@ -44,16 +44,16 @@
         var mhover = document.getElementById("mhover").value;
         var pcolor = document.getElementById("pcolor").value;
         var side   = document.getElementById("hexSide").value;
-        var line_linked_distance = side ? 70 : side+20;
+        var line_linked_distance = side+20;
         console.log(side);
         console.log(line_linked_distance);
         particlesJS("part", {
           "particles": {
             "number":{
-              "value": 50
+              "value": side
             },
             "color": {
-              "value" : pcolor
+              "value" : line_linked_distance
             },
             "move" : {
                 "speed" : 0
