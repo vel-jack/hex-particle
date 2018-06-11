@@ -496,13 +496,17 @@ var pJS = function(tag_id, params){
       t = hexSide / 2;
     //   console.log(hexSide+" "+hexRad+" "+t);
   }
-  
+  function clearVariables(){
+      hexPoint = [];
+      totalPoints = 0;
+  }
   
   pJS.fn.particlesCreate = function(){
-    hexSide = pJS.particles.number.value;
+    hexSide = parseInt(pJS.particles.number.value);
+    clearVariables();
+    pJS.fn.particlesEmpty();
     measurementCalculation(hexSide);
     pointsGenerator();
-    var xp=0;
     pJS.fn.particlesEmpty();
     console.log(hexSide+" "+pJS.particles.line_linked.distance);
     
