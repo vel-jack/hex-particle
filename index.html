@@ -46,6 +46,7 @@
         var side   = document.getElementById("hexSide").value;
         var line_linked_distance = side ? 70 : side+20;
         console.log(side);
+        console.log(line_linked_distance);
         particlesJS("part", {
           "particles": {
             "number":{
@@ -62,7 +63,7 @@
             },
             "line_linked" : {
               "width": 7,
-              "distance" : line_linked_distance
+              "distance" : 70
             },
             "opacity" : {
                 "value" : 1,
