@@ -490,6 +490,12 @@ var pJS = function(tag_id, params){
           }
       }
   }
+  
+  function clearVariables(){
+      hexPoint = [];
+      totalPoints = 0;
+  }
+  
   //to find radius, t, of the hexagon
   function measurementCalculation(hexSide){
       hexRad = (Math.sqrt(3)/2)*hexSide;
@@ -499,13 +505,12 @@ var pJS = function(tag_id, params){
   
   
   pJS.fn.particlesCreate = function(){
-    hexSide = pJS.particles.number.value;
+   hexSide = parseInt(pJS.particles.number.value);
+    // console.log(hexSide+" "+pJS.particles.line_linked.distance);
+    clearVariables();
     measurementCalculation(hexSide);
     pointsGenerator();
-    var xp=0;
-    pJS.fn.particlesEmpty();
-    console.log(hexSide+" "+pJS.particles.line_linked.distance);
-    
+    pJS.fn.particlesEmpty();    
     pJS.particles.number.value = totalPoints;
     // pJS.particles.number.value = 40;
     for(var i = 0; i <pJS.particles.number.value ; i++) {
