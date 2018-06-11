@@ -2,7 +2,7 @@ window.onload = function() {
         particlesJS("part", {
           "particles": {
             "number": {
-              "value": 100
+              "value": 50
             },
             "move" : {
                 "speed" : 0
