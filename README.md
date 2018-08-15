@@ -1,5 +1,5 @@
 # Hex-particles
- This page created using particles.js (A lightweight javascript library, from https://github.com/VincentGarreau/particles.js/)
+ [This page](https://vel-jack.github.io/hex-particles/) created using particles.js (A lightweight javascript library, from https://github.com/VincentGarreau/particles.js/)
  
 ### Task given by Newsyard for the Internship 
 To form hex grid (picture given below) and particle animation like [particles.js](https://github.com/VincentGarreau/particles.js/)
